@@ -25,12 +25,12 @@ public struct CIOFilterFacet {
     /**
      The max possible value for the facet (if it's of type range)
      */
-    public let max: Int
+    public let max: Double?
 
     /**
      The minimum possible value for the facet (if it's of type range)
      */
-    public let min: Int
+    public let min: Double?
 
     /**
      List of facet options
@@ -101,3 +101,4 @@ public extension CIOFilterFacet {
         self.data = data
     }
 }
+
