@@ -56,7 +56,7 @@ public struct CIOFilterFacet {
      Status of the facet option (for range type facets)
      - An object with "min" and "max" values, if the facet type is range and the facet is selected
      */
-    public let status: (min: String, max: String)?
+    public let status: [String: Any]?
 
 }
 
@@ -101,4 +101,5 @@ public extension CIOFilterFacet {
         self.data = data
     }
 }
+
 
