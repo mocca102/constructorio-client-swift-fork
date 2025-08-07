@@ -85,14 +85,15 @@ public extension CIOFilterFacet {
         self.status = status
         self.displayName = displayName
         self.name = name
-        self.min = min.map(floor).map(Int.init) ?? 0
-        self.max = max.map(ceil).map(Int.init) ?? 0
+        self.min = min
+        self.max = max
         self.options = options
         self.type = type
         self.hidden = hidden
         self.data = data
     }
 }
+
 
 
 
